@@ -5,10 +5,14 @@ const connectDB = require('./config/db')
 
 const app = express()
 
-// connect to DB
+// connect to DB by using config/db -file
 connectDB()
 
+// Init middleware to have a req.body to test
+app.use(express.json({ extended: false} ))
+
 app.get('/', (req, res) => res.send('API running'))
+
 
 // define routes
 app.use('/api/users', require('./routes/api/users'))
