@@ -2,17 +2,11 @@
 THE MERN stack!
 ----------------
 
-mongo setup:
+start with
+npm run server
 
-mongo db account
+notes on the course:
 
-runlevel07@gmail.com
-mongo4FLX20
 
-mongoDB Cluster0 user
-
-dbFLXAdmin
-dbAdmin1234
-
-connection string:
-mongodb+srv://dbFLXAdmin:<password>@cluster0.kelfl.mongodb.net/<dbname>?retryWrites=true&w=majority
+postman 
+localhost:5000
