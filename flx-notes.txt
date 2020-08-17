@@ -1,0 +1,18 @@
+
+THE MERN stack!
+----------------
+
+mongo setup:
+
+mongo db account
+
+runlevel07@gmail.com
+mongo4FLX20
+
+mongoDB Cluster0 user
+
+dbFLXAdmin
+dbAdmin1234
+
+connection string:
+mongodb+srv://dbFLXAdmin:<password>@cluster0.kelfl.mongodb.net/<dbname>?retryWrites=true&w=majority
