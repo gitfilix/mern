@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://dbFLXAdmin:dbAdmin1234@cluster0.kelfl.mongodb.net/project0?retryWrites=true&w=majority"
+}
