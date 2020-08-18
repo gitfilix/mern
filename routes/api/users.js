@@ -2,6 +2,8 @@ const express = require('express')
 const router = express.Router()
 const gravatar = require('gravatar')
 const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+const config = require('config')
 const { check, validationResult } = require('express-validator/check')
 
 // get data Model User
@@ -60,9 +62,25 @@ async (req, res) => {
     // save()method returns a promise so await 
     await user.save()
 
-    // return jsonwebtocken
-  
-    res.send('User registered')
+    // return jsonwebtoken
+    const payload = {
+      user: {
+        id: user.id
+      }
+    }
+    // sign the jwt tocken with payload (data), 
+    // token-get secret from config, expiration-config, 
+    // callback-method error or success
+    jwt.sign(
+      payload,
+      config.get('jwtSecret'),
+      { expiresIn: 3600 },
+      (err, token) => {
+        if (err) throw err
+        // send token to client 
+        res.json({ token })
+      })
+    //res.send('User registered')
     
   } catch(err) {
     console.error(err.message)
