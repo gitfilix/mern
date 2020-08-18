@@ -20,7 +20,6 @@ router.post('/',[
   check('password', 'Please enter a cooler password then 1234').isLength({min: 6})
 ],
 async (req, res) => {
-  console.log('usesr route', req.body)
   const errors = validationResult(req)
   if(!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() })
