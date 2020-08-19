@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://dbFLXAdmin:dbAdmin1234@cluster0.kelfl.mongodb.net/project0?retryWrites=true&w=majority",
-  "jwtSecret": "myflxsecrettoken"
+  "jwtSecret": "myflxsecrettoken",
+  "githubClientId": "b04d5b51e1df7ac6b4bf",
+  "githubSecret": "3d4bf6d323e84347eca0df1929fb2492bd09fb4b"
 }
