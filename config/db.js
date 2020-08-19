@@ -5,10 +5,12 @@ const db = config.get('mongoURI')
 // connectDB 
 const connectDB = async () => {
   try {
+    // these params are for avoiding warnings in the terminal console
     await mongoose.connect(db, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true
+      useCreateIndex: true,
+      useFindAndModify: false
     })
     console.log('MongoDB connected...')
   } catch(err) {

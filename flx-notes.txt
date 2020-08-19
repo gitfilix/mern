@@ -10,3 +10,28 @@ notes on the course:
 
 postman 
 localhost:5000
+
+// variables config for mongoose goes here
+config/default.json 
+
+
+
+// mongoose
+
+mongoose does set user._id (mongo-generated id) 
+to 
+user.id
+
+
+// middleware:
+a function that has access to 'res', 'req' objects and 
+'next' is a callback for go to the next middleware
+
+// routes
+
+
+
+
+// js-repetition
+
+[].unshift pushes the entry to beginning of the array. so last in first
